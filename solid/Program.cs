@@ -2,12 +2,13 @@
 {
     public static void Main()
     {
-        Rectangle rectangle = new Rectangle(10, 15);
-        Circle circle = new Circle(20);
-        Triangle triangle = new Triangle(15, 20);
+        Shape rectangle = new Rectangle(10, 15);
+        Shape circle = new Circle(20);
+        Shape triangle = new Triangle(15, 20);
+        Shape square = new Square(30);
 
-        object[] listObj = [triangle];
+        Shape[] shapeArr = [square];
 
-        Console.WriteLine("Total area of the list : " + AreaCalculator.TotalArea(listObj));
+        Console.WriteLine("Total area of the list : " + AreaCalculator.TotalArea(shapeArr));
     }
 }

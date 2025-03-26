@@ -1,4 +1,4 @@
-﻿class Rectangle
+﻿class Rectangle : Shape
 {
     public double Height { get; set; }
 
@@ -8,5 +8,12 @@
     {
         this.Height = height;
         this.Width = width;
+    }
+
+    public override double Area()
+    {
+        double area = Height * Width;
+
+        return area;
     }
 }

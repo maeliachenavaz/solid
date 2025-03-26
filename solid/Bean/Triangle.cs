@@ -1,4 +1,4 @@
-﻿class Triangle
+﻿class Triangle : Shape
 {
     public double BaseTriangle {  get; set; }
     public double Hauteur { get; set; }
@@ -7,5 +7,12 @@
     {
         this.BaseTriangle = baseTriangle;
         this.Hauteur = hauteur;
+    }
+
+    public override double Area()
+    {
+        double area = (this.BaseTriangle * this.Hauteur) / 2.0;
+
+        return area;
     }
 }
